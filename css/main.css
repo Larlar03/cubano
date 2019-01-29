@@ -1,0 +1,139 @@
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  background-color: #f7f0ef; }
+  body h1,
+  body h2,
+  body h3 {
+    color: #fc723e; }
+  body #wrapper {
+    width: 100%;
+    overflow: hidden; }
+    body #wrapper #header {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 20px 15px; }
+      body #wrapper #header img {
+        width: 25%;
+        height: auto; }
+      body #wrapper #header h1 {
+        padding: 15px 0; }
+      body #wrapper #header .orange {
+        color: #fc723e; }
+    body #wrapper #image-banner {
+      padding: 0; }
+      body #wrapper #image-banner .image img {
+        width: 100%;
+        height: auto; }
+    body #wrapper #sign-up {
+      max-width: 90%;
+      margin: 30px auto; }
+      body #wrapper #sign-up h2 {
+        padding: 15px 0 10px; }
+      body #wrapper #sign-up form .form-control {
+        margin: 5px; }
+      body #wrapper #sign-up form .btn {
+        margin: 20px; }
+      body #wrapper #sign-up form .btn-primary {
+        background-color: #f87493;
+        border-color: #f87493; }
+    body #wrapper #services {
+      background-color: #e4ccca;
+      padding: 20px 0; }
+      body #wrapper #services h3 {
+        color: #fc723e;
+        display: inline;
+        font-size: 1.6rem; }
+      body #wrapper #services .cubano-fem-masc {
+        display: inline;
+        font-size: 1.6rem; }
+      body #wrapper #services img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 20px; }
+      body #wrapper #services #menu,
+      body #wrapper #services #products {
+        margin: 30px auto; }
+        body #wrapper #services #menu h4,
+        body #wrapper #services #products h4 {
+          font-size: 1.3rem; }
+        body #wrapper #services #menu p,
+        body #wrapper #services #products p {
+          margin: 0 30px; }
+    body #wrapper #reviews {
+      padding: 20px; }
+      body #wrapper #reviews img {
+        width: 15%;
+        height: auto; }
+      body #wrapper #reviews h4 {
+        padding: 20px 0; }
+      body #wrapper #reviews .blockquote {
+        margin: 0 auto;
+        padding: 20px 30px;
+        font-size: 1rem; }
+    body #wrapper #contact {
+      background-color: #e4ccca;
+      padding: 30px 0; }
+      body #wrapper #contact p {
+        color: #fff; }
+      body #wrapper #contact .orange-contact {
+        color: #fc723e; }
+        body #wrapper #contact .orange-contact p {
+          color: #fc723e;
+          margin: 20px 0 0; }
+        body #wrapper #contact .orange-contact .fab {
+          font-size: 1.5rem;
+          margin: 5px 10px; }
+    body #wrapper #footer {
+      padding: 70px;
+      height: auto;
+      width: 100%; }
+      body #wrapper #footer h3 {
+        margin: 0; }
+
+@media (min-width: 900px) and (max-width: 1280px) {
+  body #wrapper #header {
+    padding: 20px 100px 0; }
+    body #wrapper #header h1 {
+      padding: 30px 0; }
+    body #wrapper #header p {
+      margin-bottom: 30px; }
+  body #wrapper #sign-up p {
+    margin-bottom: 2rem; }
+  body #wrapper #sign-up form {
+    width: 70%;
+    margin: 0 auto; }
+  body #wrapper #services {
+    background-color: #e4ccca;
+    padding: 20px 25px; }
+    body #wrapper #services .row {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center; }
+    body #wrapper #services #menu,
+    body #wrapper #services #products {
+      height: auto;
+      padding: 0 70px; }
+      body #wrapper #services #menu h4,
+      body #wrapper #services #products h4 {
+        margin-bottom: 20px; }
+  body #wrapper #reviews {
+    padding: 40px; }
+    body #wrapper #reviews .blockquote {
+      width: 50%; }
+  body #wrapper #contact .row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; } }
+
+/*# sourceMappingURL=main.css.map */

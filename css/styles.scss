@@ -1,0 +1,239 @@
+$primary-color: #fc723e;
+$accent-color: #e4ccca;
+$light-background: #f7f0ef;
+$cta-color: #f87493;
+@mixin flexcolumn {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+}
+@mixin flexrow {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  @include flexcolumn;
+  background-color: $light-background;
+
+  h1,
+  h2,
+  h3 {
+    color: $primary-color;
+  }
+
+  #wrapper {
+    width: 100%;
+    overflow: hidden;
+
+    #header {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 20px 15px;
+
+      img {
+        width: 25%;
+        height: auto;
+      }
+
+      h1 {
+        padding: 15px 0;
+      }
+
+      .orange {
+        color: $primary-color;
+      }
+    }
+
+    #image-banner {
+      padding: 0;
+
+      .image {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    #sign-up {
+      max-width: 90%;
+      margin: 30px auto;
+
+      h2 {
+        padding: 15px 0 10px;
+      }
+
+      form {
+        .form-control {
+          margin: 5px;
+        }
+
+        .btn {
+          margin: 20px;
+        }
+
+        .btn-primary {
+          background-color: $cta-color;
+          border-color: $cta-color;
+        }
+      }
+    }
+
+    #services {
+      background-color: $accent-color;
+      padding: 20px 0;
+
+      h3 {
+        color: $primary-color;
+        display: inline;
+        font-size: 1.6rem;
+      }
+
+      .cubano-fem-masc {
+        display: inline;
+        font-size: 1.6rem;
+      }
+
+      img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      #menu,
+      #products {
+        margin: 30px auto;
+
+        h4 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          margin: 0 30px;
+        }
+      }
+    }
+
+    #reviews {
+      padding: 20px;
+
+      img {
+        width: 15%;
+        height: auto;
+      }
+
+      h4 {
+        padding: 20px 0;
+      }
+
+      .blockquote {
+        margin: 0 auto;
+        padding: 20px 30px;
+        font-size: 1rem;
+      }
+    }
+
+    #contact {
+      background-color: $accent-color;
+      padding: 30px 0;
+
+      p {
+        color: #fff;
+      }
+
+      .orange-contact {
+        color: $primary-color;
+
+        p {
+          color: $primary-color;
+          margin: 20px 0 0;
+        }
+
+        .fab {
+          font-size: 1.5rem;
+          margin: 5px 10px;
+        }
+      }
+    }
+
+    #footer {
+      padding: 70px;
+      height: auto;
+      width: 100%;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+@media (min-width: 900px) and (max-width: 1280px) {
+  body {
+    #wrapper {
+      #header {
+        padding: 20px 100px 0;
+
+        h1 {
+          padding: 30px 0;
+        }
+
+        p {
+          margin-bottom: 30px;
+        }
+      }
+
+      #sign-up {
+        p {
+          margin-bottom: 2rem;
+        }
+
+        form {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+
+      #services {
+        background-color: $accent-color;
+        padding: 20px 25px;
+
+        .row {
+          @include flexrow;
+        }
+
+        #menu,
+        #products {
+          height: auto;
+          padding: 0 70px;
+
+          h4 {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      #reviews {
+        padding: 40px;
+
+        .blockquote {
+          width: 50%;
+        }
+      }
+
+      #contact {
+        .row {
+          @include flexrow;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

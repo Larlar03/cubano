@@ -7,6 +7,12 @@ body {
   flex-flow: column nowrap;
   align-content: center;
   background-color: #f7f0ef; }
+  body a {
+    color: #fc723e; }
+    body a:visited {
+      color: #fc723e; }
+    body a:hover {
+      color: #f87493; }
   body h1,
   body h2,
   body h3 {

@@ -15,6 +15,13 @@ $cta-color: #f87493;
   justify-content: center;
 }
 
+@mixin links($color, $vcolor, $hcolor) {
+  color: $color;
+    &:visited { color: $vcolor;}
+    &:hover { color: $hcolor;}
+}
+
+
 body {
   width: 100vw;
   height: auto;
@@ -22,6 +29,10 @@ body {
   text-align: center;
   @include flexcolumn;
   background-color: $light-background;
+
+  a {
+    @include links($primary-color, $primary-color, $cta-color);
+  }
 
   h1,
   h2,
